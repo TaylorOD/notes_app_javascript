@@ -27,7 +27,6 @@ const removeNote = (id) => {
   }
 }
 
-
 // generate DOM for a note
 const generateNoteDom = (note) => {
   const noteEl = document.createElement("a")
@@ -109,9 +108,6 @@ const renderNotes = (notes, filters) => {
     emptyMessage.classList.add("empty-message")
     notesEl.appendChild(emptyMessage)
   }
-
-
-  
 }
 
 // Generate the last edited message
