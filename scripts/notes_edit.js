@@ -11,7 +11,7 @@ let notes = getSavedNotes()
 let note = notes.find((note) => note.id === noteID)
 
 if (!note) {
-  location.assign("/notes_app/index.html")
+  location.assign("/index.html")
 }
 
 titleEl.value = note.title
@@ -38,7 +38,7 @@ bodyEl.addEventListener("input", (e) => {
 removeEl.addEventListener("click", () => {
   removeNote(note.id)
   saveNotes(notes)
-  location.assign("/notes_app/index.html")
+  location.assign("/index.html")
 })
 
 // syncs across edit pages
@@ -48,7 +48,7 @@ window.addEventListener("storage", (e) => {
     note = notes.find((note) => note.id === noteID)
 
     if (!note) {
-      location.assign("/notes_app/index.html")
+      location.assign("/index.html")
     }
 
     titleEl.value = note.title

@@ -23,7 +23,7 @@ document.querySelector("#create-note").addEventListener("click", (e) => {
     updatedAt: timestamp,
   })
   saveNotes(notes)
-  location.assign(`/notes_app/edit.html#${id}`)
+  location.assign(`/edit.html#${id}`)
 })
 
 // listens for search text and renders notes that match
