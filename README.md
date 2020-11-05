@@ -9,12 +9,12 @@
 - This was build using Vanilla JavaScript, HTML, and CSS.
   
 ### Status:  
-- I plan to make more updates to the project and to host it for easier use but it should be considered finished and usable.
+- Live
 
 ### Getting Started/Requirements/Prerequisites/Dependencies
 Include any essential instructions for:
 - Getting it: download or clone the project
-- Running it: use live-server to open the index.html file
+- Running it: use live-server to open the index.html file or visit notes-app-td.netlify.app
 
 ### Contributing
 - Contributor Guidelines: Please feel free to create a pull request if you have a change to suggest
@@ -24,8 +24,8 @@ Include any essential instructions for:
 - No current known issues
 
 ### TODO
-- Host it on Heroku or Netlify for easier use
-- customize the styling more
+- Customize the styling more
+- Create a backend so notes will be saved and stored
 
 ### Contact
 - taylorsunwantedemails@gmail.com
