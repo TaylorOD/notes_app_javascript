@@ -1,7 +1,7 @@
 let notes = []
 
 // read existing notes from localstorage
-const getSavedNotes = () => {
+const loadNotes = () => {
   const notesJSON = localStorage.getItem("notes")
 
 // prevents the app from crashing if the data from local storage isnt being read correctly
@@ -12,4 +12,14 @@ const getSavedNotes = () => {
   }
 }
 
-notes = getSavedNotes()
+// Expose notes from module
+const getNotes = () => notes
+
+const createNote = () => {
+  
+}
+
+
+notes = loadNotes()
+
+export { getNotes }

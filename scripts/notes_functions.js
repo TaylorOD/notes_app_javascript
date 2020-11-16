@@ -1,17 +1,17 @@
 /* global getSavedNotes, updateLastEdited, removeNote, saveNotes, moment, updatedAt, notes, filters */
 "use strict"
 
-// read existing notes from localstorage
-const getSavedNotes = () => {
-  const notesJSON = localStorage.getItem("notes")
+// // read existing notes from localstorage
+// const getSavedNotes = () => {
+//   const notesJSON = localStorage.getItem("notes")
 
-// prevents the app from crashing if the data from local storage isnt being read correctly
-  try {
-    return notesJSON ? JSON.parse(notesJSON) : []
-  } catch (e) {
-    return []
-  }
-}
+// // prevents the app from crashing if the data from local storage isnt being read correctly
+//   try {
+//     return notesJSON ? JSON.parse(notesJSON) : []
+//   } catch (e) {
+//     return []
+//   }
+// }
 
 // save notes to local storage
 const saveNotes = (notes) => {
