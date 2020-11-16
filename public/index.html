@@ -2,21 +2,42 @@
 
 <html>
 
-  <head>
-    <title>Boilerplate</title>
-    <link href="/styles/styles.css" rel="stylesheet">
+<head>
+    <title>Notes App</title>
     <link href="/images/favicon.png" rel="icon">
-  </head>
-  
-  <body>
-    
-    <div>
-      <h2>Boilerplate</h2>
-      
-    </div>
-    
-    <script src="/scripts/bundle.js"></script>
-  </body>
+    <link href="/styles/styles.css" rel="stylesheet">
+</head>
 
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">Take notes!</h2>
+        </div>
+    </header>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-text" type="text" class="input" placeholder="Filter notes">
+
+            <select id="filter-by" class="dropdown">
+                <option value="byEdited">Sort By Last Edited</option>
+                <option value="byCreated">Sort By Recently Created</option>
+                <option value="alphabetical">Sort Alphabetically</option>
+            </select>        
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="notes"></div>
+        <button id="create-note" class="button">Create New Note</button>
+
+    </div>
+
+    <script src="/scripts/index-bundle.js"></script>
+
+</body>
 
 </html>
