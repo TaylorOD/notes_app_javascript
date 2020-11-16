@@ -28,7 +28,7 @@ Include any essential instructions for:
 - Create a backend so notes will be saved and stored
 
 ### Contact
-- taylorsunwantedemails@gmail.com
+- dorsetttaylordev@gmail.com
 
 ---
 
