@@ -14,9 +14,9 @@
 // }
 
 // save notes to local storage
-const saveNotes = (notes) => {
-  localStorage.setItem("notes", JSON.stringify(notes))
-}
+// const saveNotes = (notes) => {
+//   localStorage.setItem("notes", JSON.stringify(notes))
+// }
 
 // remove note from list
 const removeNote = (id) => {
