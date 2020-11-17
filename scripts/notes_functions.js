@@ -18,14 +18,14 @@
 //   localStorage.setItem("notes", JSON.stringify(notes))
 // }
 
-// remove note from list
-const removeNote = (id) => {
-  const noteIndex = notes.findIndex((note) => note.id === id)
+// // remove note from list
+// const removeNote = (id) => {
+//   const noteIndex = notes.findIndex((note) => note.id === id)
 
-  if (noteIndex > -1) {
-    notes.splice(noteIndex, 1)
-  }
-}
+//   if (noteIndex > -1) {
+//     notes.splice(noteIndex, 1)
+//   }
+// }
 
 // generate DOM for a note
 const generateNoteDom = (note) => {
