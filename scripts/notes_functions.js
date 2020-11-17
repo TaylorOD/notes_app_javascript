@@ -1,5 +1,5 @@
 /* global getSavedNotes, updateLastEdited, removeNote, saveNotes, moment, updatedAt, notes, filters */
-"use strict"
+// "use strict"
 
 // // read existing notes from localstorage
 // const getSavedNotes = () => {
