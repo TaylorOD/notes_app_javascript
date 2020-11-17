@@ -35,6 +35,7 @@ const createNote = () => {
     updatedAt: timestamp,
   })
   saveNotes()
+  return id
 }
 
 // remove note from list
@@ -80,6 +81,26 @@ const sortNotes = (sortBy) => {
   }
 }
 
+const updateNote = (id, updates) => {
+  const note = notes.find((note) => note.id === id)
+  if (!note) {
+    return undefined
+  }
+
+  if (typeof updates.title === "string") {
+    note.title = updates.title
+    note.updatedAt = moment().valueOf()
+  }
+
+  if (typeof updates.body === "string") {
+    note.body = updates.body
+    note.updatedAt = moment().valueOf()
+  }
+
+  saveNotes()
+
+}
+
 notes = loadNotes()
 
-export { getNotes, createNote, removeNote, sortNotes }
+export { getNotes, createNote, removeNote, sortNotes, updateNote }

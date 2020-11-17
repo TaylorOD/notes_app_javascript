@@ -1,7 +1,34 @@
-import { getNotes, createNote, removeNote, sortNotes } from "./notes"
+import { createNote } from "./notes"
+import { setFilters } from "./filters"
+import { renderNotes } from "./views"
 
-// console.log(getNotes())
+renderNotes()
 
-// createNote()
-// removeNote("9b9fbcad-ec9c-42a2-906a-4c003eacf1e5")
-console.log(getNotes())
+// listens for new note text and creates new note
+document.querySelector("#create-note").addEventListener("click", (e) => {
+  const id = createNote()
+  location.assign(`/edit.html#${id}`)
+})
+
+// listens for search text and renders notes that match
+document.querySelector("#search-text").addEventListener("input", (e) => {
+  setFilters({
+    searchText: e.target.value
+  })
+  renderNotes()
+})
+
+// listens for a change in filter by and renders nots to match
+document.querySelector("#filter-by").addEventListener("change", (e) => {
+  setFilters({
+    sortBy: e.target.value
+  })
+  renderNotes()
+})
+
+// sync edit and index title storage
+window.addEventListener("storage", (e) => {
+  if (e.key === "notes") {
+    renderNotes()
+  }
+})
