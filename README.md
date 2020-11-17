@@ -14,9 +14,7 @@
 ## Screenshots:
 
 - ![Index Page](/public/images/index_html_screenshot.png "Index Page")
-- ![Edit Page](/public/images/index_html_screenshot.png "Edit Page")
-
-
+- ![Edit Page](/public/images/edit_html_screenshot.png "Edit Page")
 
 ### Getting Started/Requirements/Prerequisites/Dependencies
 Include any essential instructions for:
