@@ -23,6 +23,7 @@ const saveNotes = () => {
 // Expose notes from module
 const getNotes = () => notes
 
+// Create new note with timestamp and ID
 const createNote = () => {
   const id = uuidv4()
   const timestamp = moment().valueOf()

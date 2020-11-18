@@ -1,10 +1,9 @@
 {
-  "name": "boilerplate",
+  "name": "notes",
   "version": "1.0.0",
   "description": "",
   "main": "input.js",
   "scripts": {
-    "dev-server": "webpack-dev-server --mode development",
     "start": "webpack-cli serve --mode development",
     "build": "webpack --mode production"
   },
